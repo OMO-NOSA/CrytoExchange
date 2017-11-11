@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.itadmin.cryptoexchange.Conversion">
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="currency"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="120dp"
+        >
+
+        <EditText
+            android:id="@+id/init_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Convert From"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:padding="10sp"
+            />
+
+        <EditText
+            android:id="@+id/btc_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Value In Bitcoin"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:padding="10sp"
+            />
+
+        <EditText
+            android:id="@+id/eth_value"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:hint="Value In Etherium"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:padding="10sp"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:id="@+id/convertBtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="convert"
+            android:textAlignment="center"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
