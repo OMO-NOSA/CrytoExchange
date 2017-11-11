@@ -1,2 +1,2 @@
-# CrytoExchange
-This Android Application shows Major cryptocurrency exchnage rate and enables conversion to your choosen currency
+# CryptoExchange
+This Android Application shows Major cryptocurrency exchnage rate and enables conversion to a choosen currency
